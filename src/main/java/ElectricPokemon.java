@@ -62,7 +62,7 @@ public class ElectricPokemon extends Pokemon {
         if (opponent.getHitPoints() > 0) {
             return false;
         }
-        if (opponent.pokeType.equals("ELECTRIC")) {
+        if (opponent.pokeType.equals(PokemonType.ELECTRIC)) {
             return false;
         }
         if (this.specialtyProbability < Math.random()) {

@@ -61,7 +61,7 @@ public class FirePokemon extends Pokemon {
         if (opponent.getHitPoints() > 0) {
             return false;
         }
-        if (opponent.pokeType.equals("FIRE")) {
+        if (opponent.pokeType.equals(PokemonType.FIRE)) {
             return false;
         }
         if (this.specialtyProbability < Math.random()) {
